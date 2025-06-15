@@ -1,0 +1,156 @@
+body {
+  background-color: #18181b;
+  font-family: "Inter", Cascadia Code, monospace;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  background-color: #18181b;
+  width: 1400px;
+  height: 800px;
+  margin: 50px auto;
+  padding: 20px 20px;
+  gap: 20px;
+}
+
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #3f3f46;
+  width: 375px;
+  height: 270px;
+  border-radius: 15px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  gap: 5px;
+}
+
+.right-pane {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+}
+
+.content {
+  background-color: #3f3f46;
+  padding: 20px;
+  border-radius: 15px;
+  height: auto;
+}
+
+.content-section {
+  color: black;
+  font-family: Inter, sans-serif;
+  font-size: 1.1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #3f3f46;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.name-space {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.full-name {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #d4d4d4;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+
+.github-link {
+  font-family: Cascadia Code, monospace;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #18181b;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  letter-spacing: 0.5p;
+  font-variant-ligatures: contextual;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  color: #5197ac;
+}
+
+.bio {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #d4d4d4;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  border: 1px solid #3f3f46;
+  height: 50px;
+  border-radius: 15px;
+  gap: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  background-color: transparent;
+  border-radius: 15px;
+  transition-duration: 0.3s;
+  color: white;
+  outline: none;
+  border: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 24px;
+}
+
+.buttons:hover {
+  background-color: #3f3f46;
+}
+
+.buttons:focus {
+  outline: none;
+}
+
+.button-text {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.75px;
+}
+
+h1 {
+  color: white;
+  font-size: 24px;
+}
+
+.pfp {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}

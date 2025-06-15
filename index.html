@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drew Igoe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.bunny.net/css?family=cascadia-code:400"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="profile-box">
+        <img src="square-pfp.png" alt="profile-pic" class="pfp" />
+
+        <div class="profile-info">
+          <div class="name-space">
+            <h1 class="full-name">Drew Igoe</h1>
+            <a href="https://github.com/druiw" class="github-link">(@druiw)</a>
+          </div>
+          <div class="bio">
+            <p>Computer Science student at Arizona State University.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-pane">
+        <div class="nav-links">
+          <button class="buttons" onclick="showSection('home')">
+            <span class="button-text">Home</span>
+          </button>
+
+          <button class="buttons" onclick="showSection('projects')">
+            <span class="button-text">Projects</span>
+          </button>
+
+          <button class="buttons" onclick="showSection('resume')">
+            <span class="button-text">Resume</span>
+          </button>
+        </div>
+
+        <div class="content">
+          <div id="home" class="content-section"></div>
+
+          <div id="projects" class="content-section" style="display: none">
+            <div class="projects-grid">
+              <div class="project-card">
+                <p>Hi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function showSection(id) {
+        document.querySelectorAll(".content-section").forEach((section) => {
+          section.style.display = "none";
+        });
+        document.getElementById(id).style.display = "block";
+      }
+    </script>
+  </body>
+</html>
