@@ -23,7 +23,6 @@ body {
   border-radius: 15px;
   padding: 20px 30px;
   box-sizing: border-box;
-  gap: 5px;
 }
 
 .right-pane {
@@ -45,10 +44,19 @@ body {
   font-size: 1.1rem;
 }
 
+.welcome {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #3f3f46;
+  border-radius: 15px;
+  padding: 12px 24px;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 15px;
 }
 
 .project-card {
@@ -67,6 +75,7 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 50px;
+  margin-bottom: 0;
 }
 
 .full-name {
@@ -76,6 +85,7 @@ body {
   color: #d4d4d4;
   line-height: 1.1;
   letter-spacing: 0.5px;
+  margin-bottom: 0;
 }
 
 .github-link {
@@ -88,6 +98,7 @@ body {
   letter-spacing: 0.5p;
   font-variant-ligatures: contextual;
   text-decoration: none;
+  margin-bottom: 0;
 }
 
 .github-link:hover {
@@ -95,12 +106,15 @@ body {
 }
 
 .bio {
+  display: flex;
+  flex-direction: column;
   font-family: Inter, sans-serif;
   font-weight: 400;
   font-size: 1rem;
   color: #d4d4d4;
   line-height: 1.5;
   letter-spacing: 0.5px;
+  margin-bottom: 0;
 }
 
 .nav-links {
@@ -181,6 +195,11 @@ body {
 h1 {
   color: white;
   font-size: 24px;
+}
+
+h2 {
+  color: white;
+  font-size: 18px;
 }
 
 .pfp {
