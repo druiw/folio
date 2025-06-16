@@ -34,8 +34,7 @@ body {
 }
 
 .content {
-  background-color: #3f3f46;
-  padding: 20px;
+  background-color: transparent;
   border-radius: 15px;
   height: auto;
 }
@@ -48,17 +47,19 @@ body {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
 .project-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+
   background-color: #3f3f46;
   border-radius: 15px;
   padding: 20px;
-  display: flex;
-  gap: 15px;
-  align-items: flex-start;
+  max-width: 450px;
 }
 
 .name-space {
@@ -142,6 +143,39 @@ body {
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.75px;
+}
+
+.project-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.project-title {
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #d4d4d4;
+  margin: 0;
+}
+
+.project-lang {
+  color: #b0b0b0;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.project-desc {
+  color: #b0b0b0;
+  font-size: 0.95rem;
+  margin-top: 6px;
 }
 
 h1 {
