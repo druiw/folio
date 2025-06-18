@@ -117,19 +117,44 @@ body {
   margin-bottom: 0;
 }
 
+.bio-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
 .linkedin-link {
-  margin-top: 8px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .linkedin-icon {
   width: 24px;
   height: 24px;
   object-fit: contain;
+  vertical-align: top;
   transition: opacity 0.2s ease-in-out;
 }
 
 .linkedin-icon:hover {
+  opacity: 0.7;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.github-icon {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.github-icon:hover {
   opacity: 0.7;
 }
 
