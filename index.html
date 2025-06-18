@@ -26,22 +26,28 @@
           </div>
           <div class="bio">
             <p>Computer Science student at Arizona State University.</p>
-            <h1>Test</h1>
+            <a
+              href="https://www.linkedin.com/in/drewigoe/"
+              target="_blank"
+              class="linkedin-link"
+            >
+              <img src="linked-in.png" alt="LinkedIn" class="linkedin-icon" />
+            </a>
           </div>
         </div>
       </div>
 
       <div class="right-pane">
         <div class="nav-links">
-          <button class="buttons" onclick="showSection('home')">
+          <button class="buttons" onclick="showSection(this, 'home')">
             <span class="button-text">Home</span>
           </button>
 
-          <button class="buttons" onclick="showSection('projects')">
+          <button class="buttons" onclick="showSection(this, 'projects')">
             <span class="button-text">Projects</span>
           </button>
 
-          <button class="buttons" onclick="showSection('resume')">
+          <button class="buttons" onclick="showSection(this, 'resume')">
             <span class="button-text">Resume</span>
           </button>
         </div>
@@ -163,11 +169,22 @@
       </div>
     </div>
     <script>
-      function showSection(id) {
+      function showSection(button, id) {
+        // Hide all sections
         document.querySelectorAll(".content-section").forEach((section) => {
           section.style.display = "none";
         });
+
+        // Show the selected one
         document.getElementById(id).style.display = "block";
+
+        // Remove .active from all buttons
+        document.querySelectorAll(".buttons").forEach((btn) => {
+          btn.classList.remove("active");
+        });
+
+        // Add .active to the clicked button
+        button.classList.add("active");
       }
     </script>
   </body>
