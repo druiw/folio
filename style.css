@@ -20,7 +20,37 @@ body {
   background-color: #3f3f46;
   border-radius: 15px;
   padding: 20px 30px;
+  gap: 5px;
   box-sizing: border-box;
+}
+
+.my-stack {
+  display: flex;
+  flex-direction: column;
+  background-color: #3f3f46;
+  border-radius: 15px;
+  padding: 20px 30px;
+}
+
+.stack-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.stack-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  padding: 5px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.left-pane {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .right-pane {
@@ -87,14 +117,12 @@ body {
 }
 
 .github-link {
-  position: relative;
-  top: 2px;
   font-family: Cascadia Code, monospace;
   font-weight: 400;
   font-size: 1.3rem;
+  align-self: flex-end;
   color: #18181b;
-  letter-spacing: 0.5px;
-  line-height: 1.1;
+  line-height: 1.5rem; /* match full-name height */
   letter-spacing: 0.5px;
   font-variant-ligatures: contextual;
   text-decoration: none;
@@ -130,13 +158,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  vertical-align: top;
   gap: 20px;
-}
-
-.linkedin-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .linkedin-icon {
@@ -151,15 +174,11 @@ body {
   opacity: 0.7;
 }
 
-.github-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .github-icon {
   width: 24px;
   height: 24px;
+  object-fit: contain;
+  vertical-align: top;
   transition: opacity 0.2s ease-in-out;
 }
 
