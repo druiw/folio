@@ -17,6 +17,7 @@ body {
   display: flex;
   align-self: flex-start;
   flex-direction: column;
+  flex-grow: 1;
   background-color: #3f3f46;
   border-radius: 15px;
   padding: 20px 30px;
@@ -35,6 +36,8 @@ body {
 .stack-icons {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 10px;
 }
 
@@ -45,6 +48,11 @@ body {
   padding: 5px;
   border-radius: 12px;
   object-fit: cover;
+}
+
+.stack-icon:hover {
+  background-color: #b0b0b0;
+  opacity: 0.7;
 }
 
 .left-pane {
