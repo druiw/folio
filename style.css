@@ -129,7 +129,7 @@ body {
   font-size: 1.3rem;
   align-self: flex-end;
   color: #18181b;
-  line-height: 1.5rem; /* match full-name height */
+  line-height: 1.5rem;
   letter-spacing: 0.5px;
   font-variant-ligatures: contextual;
   text-decoration: none;
