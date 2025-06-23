@@ -103,6 +103,19 @@ body {
   border-radius: 15px;
   padding: 20px;
   max-width: 450px;
+
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  z-index: 1;
+  position: relative;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  z-index: 10;
 }
 
 .name-space {
