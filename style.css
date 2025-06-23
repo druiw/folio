@@ -93,6 +93,11 @@ body {
   color: black;
   font-family: Inter, sans-serif;
   font-size: 1.1rem;
+  display: none;
+}
+
+.content-section.active {
+  display: block;
 }
 
 .welcome {

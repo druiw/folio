@@ -109,7 +109,7 @@
           </div>
 
           <div class="content">
-            <div id="home" class="content-section">
+            <div id="home" class="content-section active">
               <div class="welcome">
                 <h1>Hey, I'm <span class="full-name">Drew</span></h1>
                 <h2>
@@ -133,7 +133,7 @@
               </div>
             </div>
 
-            <div id="projects" class="content-section" style="display: none">
+            <div id="projects" class="content-section">
               <div class="projects-grid">
                 <!-- Cloud Resource Tracker -->
                 <a
@@ -295,20 +295,16 @@
 
     <script>
       function showSection(button, id) {
-        // Hide all sections
         document.querySelectorAll(".content-section").forEach((section) => {
-          section.style.display = "none";
+          section.classList.remove("active");
         });
 
-        // Show the selected one
-        document.getElementById(id).style.display = "block";
+        document.getElementById(id).classList.add("active");
 
-        // Remove .active from all buttons
         document.querySelectorAll(".buttons").forEach((btn) => {
           btn.classList.remove("active");
         });
 
-        // Add .active to the clicked button
         button.classList.add("active");
       }
     </script>
