@@ -15,272 +15,284 @@
     />
   </head>
   <body>
-    <div class="main">
-      <div class="left-pane">
-        <div class="profile-box">
-          <img src="images/square-pfp.png" alt="profile-pic" class="pfp" />
+    <div class="container">
+      <div class="main">
+        <div class="left-pane">
+          <div class="profile-box">
+            <img src="images/square-pfp.png" alt="profile-pic" class="pfp" />
 
-          <div class="profile-info">
-            <div class="name-space">
-              <h1 class="full-name">Drew Igoe</h1>
-              <a href="https://github.com/druiw" class="github-link"
-                >(@druiw)</a
-              >
-            </div>
-            <div class="bio">
-              <p>Computer Science student at Arizona State University.</p>
-              <div class="bio-links">
-                <a
-                  href="https://www.linkedin.com/in/drewigoe/"
-                  target="_blank"
-                  class="linkedin-link"
+            <div class="profile-info">
+              <div class="name-space">
+                <h1 class="full-name">Drew Igoe</h1>
+                <a href="https://github.com/druiw" class="github-link"
+                  >(@druiw)</a
                 >
-                  <img
-                    src="images/linked-in.png"
-                    alt="LinkedIn"
-                    class="linkedin-icon"
-                  />
-                </a>
+              </div>
+              <div class="bio">
+                <p>Computer Science student at Arizona State University.</p>
+                <div class="bio-links">
+                  <a
+                    href="https://www.linkedin.com/in/drewigoe/"
+                    target="_blank"
+                    class="linkedin-link"
+                  >
+                    <img
+                      src="images/linked-in.png"
+                      alt="LinkedIn"
+                      class="linkedin-icon"
+                    />
+                  </a>
 
-                <a
-                  href="https://github.com/druiw"
-                  target="_blank"
-                  class="github-icon-link"
-                >
-                  <img
-                    src="images/github-img.png"
-                    alt="Github"
-                    class="github-icon"
-                  />
-                </a>
+                  <a
+                    href="https://github.com/druiw"
+                    target="_blank"
+                    class="github-icon-link"
+                  >
+                    <img
+                      src="images/github-img.png"
+                      alt="Github"
+                      class="github-icon"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="my-stack">
-          <h1>My Stack</h1>
-          <div class="stack-icons">
-            <img
-              src="images/python-logo.png"
-              alt="Python Logo"
-              class="stack-icon"
-            />
-            <img src="images/java.png" alt="Java Logo" class="stack-icon" />
-            <img
-              src="images/swift-logo.png"
-              alt="Swift Logo"
-              class="stack-icon"
-            />
-            <img
-              src="images/HTML-logo.png"
-              alt="HTML Logo"
-              class="stack-icon"
-            />
-            <img src="images/css-logo.png" alt="CSS Logo" class="stack-icon" />
-            <img src="images/c++-logo.png" alt="C++ Logo" class="stack-icon" />
-            <img src="images/c-logo.png" alt="C Logo" class="stack-icon" />
-          </div>
-        </div>
-      </div>
-
-      <div class="right-pane">
-        <div class="nav-links">
-          <button class="buttons" onclick="showSection(this, 'home')">
-            <span class="button-text">Home</span>
-          </button>
-
-          <button class="buttons" onclick="showSection(this, 'projects')">
-            <span class="button-text">Projects</span>
-          </button>
-
-          <button class="buttons" onclick="showSection(this, 'Gallery')">
-            <span class="button-text">A Look Into My Life</span>
-          </button>
-        </div>
-
-        <div class="content">
-          <div id="home" class="content-section">
-            <div class="welcome">
-              <h1>Hey, I'm Drew Igoe!</h1>
-              <h2>
-                Lifelong tech enthusiast who loves building software and
-                bringing ideas to life.
-              </h2>
-              <p class="intro">
-                Tech has always been more than just screens and code for me.
-                It’s about figuring things out, building cool stuff, and
-                bringing ideas to life. I enjoy creating software that people
-                actually use and get value from. When I’m working on something,
-                I care most about user experience, performance, and keeping the
-                code clean and easy to maintain. My approach to problem solving
-                usually starts simple — I’ll get something working first, then
-                go back and make it better. I keep building because I genuinely
-                enjoy it, and there’s always something new to learn. Outside of
-                coding, I’m probably at the gym, catching up with friends, or
-                doing something fun just for myself.
-              </p>
+          <div class="my-stack">
+            <h1>My Stack</h1>
+            <div class="stack-icons">
+              <img
+                src="images/python-logo.png"
+                alt="Python Logo"
+                class="stack-icon"
+              />
+              <img src="images/java.png" alt="Java Logo" class="stack-icon" />
+              <img
+                src="images/swift-logo.png"
+                alt="Swift Logo"
+                class="stack-icon"
+              />
+              <img
+                src="images/HTML-logo.png"
+                alt="HTML Logo"
+                class="stack-icon"
+              />
+              <img
+                src="images/css-logo.png"
+                alt="CSS Logo"
+                class="stack-icon"
+              />
+              <img
+                src="images/c++-logo.png"
+                alt="C++ Logo"
+                class="stack-icon"
+              />
+              <img src="images/c-logo.png" alt="C Logo" class="stack-icon" />
             </div>
           </div>
+        </div>
 
-          <div id="projects" class="content-section" style="display: none">
-            <div class="projects-grid">
-              <!-- Cloud Resource Tracker -->
-              <a
-                href="https://github.com/druiw/Cloud-Resource-Tracker"
-                target="_blank"
-                class="project-card"
-              >
-                <img
-                  src="images/CRT.png"
-                  alt="project-image"
-                  class="project-icon"
-                />
+        <div class="right-pane">
+          <div class="nav-links">
+            <button class="buttons" onclick="showSection(this, 'home')">
+              <span class="button-text">Home</span>
+            </button>
 
-                <div class="project-text">
-                  <h3 class="project-title">Cloud Resource Tracker</h3>
-                  <p class="project-lang">Python</p>
-                  <p class="project-desc">
-                    A simple Python command line tool that simulates creating,
-                    listing, and deleting cloud resources.
-                  </p>
-                </div>
-              </a>
+            <button class="buttons" onclick="showSection(this, 'projects')">
+              <span class="button-text">Projects</span>
+            </button>
 
-              <!-- Sonara -->
-              <a
-                href="https://github.com/druiw/Sonara"
-                target="_blank"
-                class="project-card"
-              >
-                <img
-                  src="images/Sonara.png"
-                  alt="project-image"
-                  class="project-icon"
-                />
-
-                <div class="project-text">
-                  <h3 class="project-title">Sonara</h3>
-                  <p class="project-lang">Python</p>
-                  <p class="project-desc">
-                    Sonara grabs your current Spotify song playing and shows
-                    synced lyrics live. Custom music visualizations are in
-                    development.
-                  </p>
-                </div>
-              </a>
-
-              <!-- Carbon Footprint Calculator -->
-              <a
-                href="https://github.com/druiw/Carbon-Footprint-Calculator"
-                target="_blank"
-                class="project-card"
-              >
-                <img
-                  src="images/CFC.png"
-                  alt="project-image"
-                  class="project-icon"
-                />
-
-                <div class="project-text">
-                  <h3 class="project-title">
-                    Carbon Footprint Calculator iOS App
-                  </h3>
-                  <p class="project-lang">Swift, SwiftUI</p>
-                  <p class="project-desc">
-                    An iOS app that helps users calculate their carbon footprint
-                    based on their daily activities.
-                  </p>
-                </div>
-              </a>
-
-              <!-- iOS Image Classifier -->
-              <a
-                href="https://github.com/druiw/ImageClassifier"
-                target="_blank"
-                class="project-card"
-              >
-                <img
-                  src="images/Classifier.png"
-                  alt="project-image"
-                  class="project-icon"
-                />
-
-                <div class="project-text">
-                  <h3 class="project-title">Image Classifer iOS App</h3>
-                  <p class="project-lang">Swift, SwiftUI</p>
-                  <p class="project-desc">
-                    A simple iOS app that uses CoreML to classify images using
-                    MobileNetV2.
-                  </p>
-                </div>
-              </a>
-
-              <!-- Activ -->
-              <a
-                href="https://github.com/druiw/Activ"
-                target="_blank"
-                class="project-card"
-              >
-                <img
-                  src="images/Activ.png"
-                  alt="project-image"
-                  class="project-icon"
-                />
-
-                <div class="project-text">
-                  <h3 class="project-title">Activ</h3>
-                  <p class="project-lang">Swift, SwiftUI</p>
-                  <p class="project-desc">
-                    A SwiftUI app that helps you track your workouts.
-                  </p>
-                </div>
-              </a>
-
-              <!-- Lego Robot Taxi Service -->
-              <a
-                href="https://github.com/druiw/Lego-Robot-Taxi-Service-Project-Spyn-"
-                target="_blank"
-                class="project-card"
-              >
-                <img
-                  src="images/LRTS.png"
-                  alt="project-image"
-                  class="project-icon"
-                />
-
-                <div class="project-text">
-                  <h3 class="project-title">Lego Robot Taxi Service</h3>
-                  <p class="project-lang">MATLAB</p>
-                  <p class="project-desc">
-                    A MATLAB simulation of a taxi service using Lego Mindstorms
-                    EV3 robots.
-                  </p>
-                </div>
-              </a>
-              <!-- End of project cards -->
-            </div>
+            <button class="buttons" onclick="showSection(this, 'Gallery')">
+              <span class="button-text">A Look Into My Life</span>
+            </button>
           </div>
-          <div class="gallery-layout content-section" id="Gallery">
-            <img width="300px" src="images/IMG_1263.jpeg" alt="" />
-            <img width="300px" src="images/IMG_3565.jpeg" alt="" />
-            <img width="300px" src="images/IMG_3607.jpeg" alt="" />
-            <img width="300px" src="images/IMG_3630.jpeg" alt="" />
-            <img width="300px" src="images/IMG_3680.jpeg" alt="" />
-            <img width="300px" src="images/IMG_3753.jpeg" alt="" />
-            <img width="300px" src="images/IMG_3765.jpeg" alt="" />
-            <img width="300px" src="images/IMG_3772.jpeg" alt="" />
-            <img width="300px" src="images/IMG_3781.jpeg" alt="" />
-            <img width="300px" src="images/IMG_6253.jpeg" alt="" />
-            <img width="300px" src="images/IMG_3124.jpeg" alt="" />
-            <img width="300px" src="images/IMG_3125.jpeg" alt="" />
-            <img width="300px" src="images/IMG_2274.jpeg" alt="" />
-            <img width="300px" src="images/IMG_2457.jpeg" alt="" />
-            <img width="300px" src="images/IMG_3589.jpeg" alt="" />
+
+          <div class="content">
+            <div id="home" class="content-section">
+              <div class="welcome">
+                <h1>Hey, I'm <span class="full-name">Drew</span></h1>
+                <h2>
+                  Lifelong tech enthusiast who loves building software and
+                  bringing ideas to life.
+                </h2>
+                <p class="intro">
+                  Tech has always been more than just screens and code for me.
+                  It’s about figuring things out, building cool stuff, and
+                  bringing ideas to life. I enjoy creating software that people
+                  actually use and get value from. When I’m working on
+                  something, I care most about user experience, performance, and
+                  keeping the code clean and easy to maintain. My approach to
+                  problem solving usually starts simple — I’ll get something
+                  working first, then go back and make it better. I keep
+                  building because I genuinely enjoy it, and there’s always
+                  something new to learn. Outside of coding, I’m probably at the
+                  gym, catching up with friends, or doing something fun just for
+                  myself.
+                </p>
+              </div>
+            </div>
+
+            <div id="projects" class="content-section" style="display: none">
+              <div class="projects-grid">
+                <!-- Cloud Resource Tracker -->
+                <a
+                  href="https://github.com/druiw/Cloud-Resource-Tracker"
+                  target="_blank"
+                  class="project-card"
+                >
+                  <img
+                    src="images/CRT.png"
+                    alt="project-image"
+                    class="project-icon"
+                  />
+
+                  <div class="project-text">
+                    <h3 class="project-title">Cloud Resource Tracker</h3>
+                    <p class="project-lang">Python</p>
+                    <p class="project-desc">
+                      A simple Python command line tool that simulates creating,
+                      listing, and deleting cloud resources.
+                    </p>
+                  </div>
+                </a>
+
+                <!-- Sonara -->
+                <a
+                  href="https://github.com/druiw/Sonara"
+                  target="_blank"
+                  class="project-card"
+                >
+                  <img
+                    src="images/Sonara.png"
+                    alt="project-image"
+                    class="project-icon"
+                  />
+
+                  <div class="project-text">
+                    <h3 class="project-title">Sonara</h3>
+                    <p class="project-lang">Python</p>
+                    <p class="project-desc">
+                      Sonara grabs your current Spotify song playing and shows
+                      synced lyrics live. Custom music visualizations are in
+                      development.
+                    </p>
+                  </div>
+                </a>
+
+                <!-- Carbon Footprint Calculator -->
+                <a
+                  href="https://github.com/druiw/Carbon-Footprint-Calculator"
+                  target="_blank"
+                  class="project-card"
+                >
+                  <img
+                    src="images/CFC.png"
+                    alt="project-image"
+                    class="project-icon"
+                  />
+
+                  <div class="project-text">
+                    <h3 class="project-title">
+                      Carbon Footprint Calculator iOS App
+                    </h3>
+                    <p class="project-lang">Swift, SwiftUI</p>
+                    <p class="project-desc">
+                      An iOS app that helps users calculate their carbon
+                      footprint based on their daily activities.
+                    </p>
+                  </div>
+                </a>
+
+                <!-- iOS Image Classifier -->
+                <a
+                  href="https://github.com/druiw/ImageClassifier"
+                  target="_blank"
+                  class="project-card"
+                >
+                  <img
+                    src="images/Classifier.png"
+                    alt="project-image"
+                    class="project-icon"
+                  />
+
+                  <div class="project-text">
+                    <h3 class="project-title">Image Classifer iOS App</h3>
+                    <p class="project-lang">Swift, SwiftUI</p>
+                    <p class="project-desc">
+                      A simple iOS app that uses CoreML to classify images using
+                      MobileNetV2.
+                    </p>
+                  </div>
+                </a>
+
+                <!-- Activ -->
+                <a
+                  href="https://github.com/druiw/Activ"
+                  target="_blank"
+                  class="project-card"
+                >
+                  <img
+                    src="images/Activ.png"
+                    alt="project-image"
+                    class="project-icon"
+                  />
+
+                  <div class="project-text">
+                    <h3 class="project-title">Activ</h3>
+                    <p class="project-lang">Swift, SwiftUI</p>
+                    <p class="project-desc">
+                      A SwiftUI app that helps you track your workouts.
+                    </p>
+                  </div>
+                </a>
+
+                <!-- Lego Robot Taxi Service -->
+                <a
+                  href="https://github.com/druiw/Lego-Robot-Taxi-Service-Project-Spyn-"
+                  target="_blank"
+                  class="project-card"
+                >
+                  <img
+                    src="images/LRTS.png"
+                    alt="project-image"
+                    class="project-icon"
+                  />
+
+                  <div class="project-text">
+                    <h3 class="project-title">Lego Robot Taxi</h3>
+                    <p class="project-lang">MATLAB</p>
+                    <p class="project-desc">
+                      A MATLAB simulation of a taxi service using Lego
+                      Mindstorms EV3 robots.
+                    </p>
+                  </div>
+                </a>
+                <!-- End of project cards -->
+              </div>
+            </div>
+            <div class="gallery-layout content-section" id="Gallery">
+              <img width="300px" src="images/IMG_1263.jpeg" alt="" />
+              <img width="300px" src="images/IMG_3565.jpeg" alt="" />
+              <img width="300px" src="images/IMG_3607.jpeg" alt="" />
+              <img width="300px" src="images/IMG_3630.jpeg" alt="" />
+              <img width="300px" src="images/IMG_3680.jpeg" alt="" />
+              <img width="300px" src="images/IMG_3753.jpeg" alt="" />
+              <img width="300px" src="images/IMG_3765.jpeg" alt="" />
+              <img width="300px" src="images/IMG_3772.jpeg" alt="" />
+              <img width="300px" src="images/IMG_3781.jpeg" alt="" />
+              <img width="300px" src="images/IMG_6253.jpeg" alt="" />
+              <img width="300px" src="images/IMG_3124.jpeg" alt="" />
+              <img width="300px" src="images/IMG_3125.jpeg" alt="" />
+              <img width="300px" src="images/IMG_2274.jpeg" alt="" />
+              <img width="300px" src="images/IMG_2457.jpeg" alt="" />
+              <img width="300px" src="images/IMG_3589.jpeg" alt="" />
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <script>
       function showSection(button, id) {
         // Hide all sections

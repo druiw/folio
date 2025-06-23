@@ -3,13 +3,23 @@ body {
   font-family: "Inter", Cascadia Code, monospace;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
 .main {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   background-color: #18181b;
-  width: 1400px;
-  margin: 50px auto;
-  padding: 20px 20px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-left: 1px;
   gap: 20px;
 }
 
@@ -22,6 +32,8 @@ body {
   padding: 20px 30px;
   gap: 5px;
   box-sizing: border-box;
+  width: 100%;
+  max-width: 400px;
 }
 
 .my-stack {
@@ -30,13 +42,15 @@ body {
   background-color: #3f3f46;
   border-radius: 15px;
   padding: 20px 30px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
 }
 
 .stack-icons {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -56,12 +70,14 @@ body {
 
 .left-pane {
   display: flex;
+  flex: 0 0 410px;
   flex-direction: column;
   gap: 20px;
 }
 
 .right-pane {
   display: flex;
+  flex: 1;
   flex-direction: column;
   flex: 1;
   gap: 20px;
@@ -90,25 +106,22 @@ body {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: stretch;
 }
 
 .project-card {
   display: flex;
-  align-items: flex-start;
   gap: 15px;
+  flex-direction: row; /* horizontal layout */
+  align-items: flex-start;
 
   background-color: #3f3f46;
   border-radius: 15px;
-  padding: 20px;
-  max-width: 450px;
+  padding: 15px 20px;
 
-  transition: transform 0.3s ease;
-  transform-origin: center;
-  z-index: 1;
-  position: relative;
-
+  transition: box-shadow 0.3s ease;
   text-decoration: none;
   color: inherit;
 }
@@ -130,7 +143,7 @@ body {
   font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
-  color: #d4d4d4;
+  color: #5197ac;
   line-height: 1.1;
   letter-spacing: 0.5px;
   margin-bottom: 0;
@@ -157,7 +170,7 @@ body {
   font-family: Inter, sans-serif;
   font-weight: 400;
   font-size: 1.1rem;
-  color: #d4d4d4;
+  color: white;
   line-height: 1.5;
   letter-spacing: 0.5px;
 }
@@ -168,7 +181,7 @@ body {
   font-family: Inter, sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  color: #d4d4d4;
+  color: white;
   line-height: 1.5;
   letter-spacing: 0.5px;
   margin-bottom: 0;
@@ -251,8 +264,8 @@ body {
 }
 
 .project-icon {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 12px;
   object-fit: cover;
 }
@@ -292,6 +305,8 @@ body {
 
 .gallery-layout img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
   display: block;
   margin-bottom: 1em;
   border-radius: 12px;
@@ -309,11 +324,45 @@ h1 {
 
 h2 {
   color: white;
-  font-size: 18px;
+  font-size: 17px;
+  letter-spacing: 0.5px;
 }
 
 .pfp {
   width: 100px;
   height: 100px;
   border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* 1 card per row on small screens */
+  }
+
+  .gallery-layout {
+    column-count: 1;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .buttons {
+    width: 100%;
+  }
+
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-text {
+    align-items: center;
+  }
 }
